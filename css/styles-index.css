@@ -1,0 +1,72 @@
+body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ff41d0, #1b23c4);  
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      font-size: 1.8em;
+      font-weight: bold;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    section {
+      margin-top: 50px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 20px;
+      width: 80%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      color: #ffea00;
+      margin-bottom: 10px;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      opacity: 0.8;
+      animation: fadeInUp 2s ease-in-out;
+    }
